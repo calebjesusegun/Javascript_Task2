@@ -32,7 +32,7 @@
 
                 let time = data[i].time;
 
-                if (principal >= 2500 && (time > 1 && time <= 3)) {
+                if (principal >= 2500 && (time > 1 && time < 3)) {
                     rate = 3;
                     interest = (principal * rate * time) / 100;
                     myInterest = {principal: principal, rate: rate, time: time, interest: interest};
